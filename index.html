@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-    </head>
-    <body>
-    <header>
-        <h1>
-            <nav class="container">
-                <ul>
-                    <li><a href="/">Inicio</a></li>
-                    <li><a href="/restaurantes"></a></li>
-                    <li><a href="/lugaresinteres"></a></li>
-                    <li><a href="/transporte"></a></li>
-                </ul>
-            </nav>
-        </h1>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes a Japón - Blog Interactivo</title>
+  <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">Viajes a Japón</div>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Destinos</a></li>
+        <li><a href="#">Cultura</a></li>
+        <li><a href="#">Consejos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    </header>
-    <section class="container">
-        <h1>Blog de viajes a japón</h1>
-        <p>Diferentes lugares que descubrir y cómo viajar hasta ellos</p>
+  <section class="hero">
+    <div class="container">
+      <h1>Explora Japón</h1>
+      <p>Descubre templos milenarios, tecnología futurista y paisajes de ensueño.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="blog-grid">
+      <article data-id="1">
+        <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=800&q=60" alt="Templos de Kioto">
+        <div class="article-content">
+          <h2>Templos de Kioto</h2>
+          <p>Una experiencia espiritual y cultural única en el corazón del Japón tradicional.</p>
+        </div>
+      </article>
+
+      <article data-id="2">
+        <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=60" alt="Tokio de noche">
+        <div class="article-content">
+          <h2>Tokio de noche</h2>
+          <p>Luces, sabores y sonidos. Tokio nunca duerme y siempre sorprende.</p>
+        </div>
+      </article>
+
+      <article data-id="3">
+        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60" alt="Monte Fuji">
+        <div class="article-content">
+          <h2>Monte Fuji</h2>
+          <p>El símbolo más icónico de Japón, lleno de espiritualidad y naturaleza.</p>
+        </div>
+      </article>
     </section>
-    <main>
-        <article>
-            <h2>Restaurantes</h2>
-            <p>Contenidooooo</p>
-            <p>Autor: Cristina &Tab;  <time>05/11/2025</time> </p>
-        </article>
-        <article>
-            <h2>Lugares interés</h2>
-            <p>Contenidooooo</p>
-            <p>Autor: Cristina &Tab;  <time>05/11/2025</time> </p>
-        </article>
-        <article>
-            <h2>Transporte</h2>
-            <p>Contenidooooo</p>
-            <p>Autor: Cristina &Tab;  <time>05/11/2025</time> </p>
-        </article>
-    </main>
 
-    <footer>
-        <p>&copy;Viaje a Japón &#x1F338; Todos los derechos reservados. </p>
-    </footer>
-    </body>
+    <!-- Zona donde se mostrará el artículo seleccionado -->
+    <section id="article-detail" class="article-detail"></section>
+  </main>
+
+  <footer>
+    © 2025 Viajes a Japón · Diseñado con 🌸 y pasión por viajar
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

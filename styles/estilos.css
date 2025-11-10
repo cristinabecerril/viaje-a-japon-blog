@@ -1,0 +1,118 @@
+:root {
+  --color-bg: #f9f9fb;
+  --color-text: #2c2c2c;
+  --color-muted: #777c85;
+  --color-primary: #d7263d;
+  --color-accent: #5cc8ff;
+  --color-card-bg: #ffffff;
+  --color-border: #e5e5e5;
+  --font-main: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: var(--color-card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.hero h1 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+}
+
+/* Blog grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+article {
+  background: var(--color-card-bg);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+article.active {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+/* Detalle del artículo */
+.article-detail {
+  margin-top: 3rem;
+  background: var(--color-card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.article-detail h2 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.article-detail img {
+  margin: 1rem 0;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid var(--color-border);
+}
