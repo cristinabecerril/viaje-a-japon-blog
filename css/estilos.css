@@ -100,6 +100,10 @@ article {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+article h2{
+  padding-left: 0.83rem;
+}
+
 article:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -122,7 +126,6 @@ article.active {
 .article-detail h2 {
   color: var(--color-primary);
   margin-bottom: 1rem;
-  padding-left: 0.83rem;
 }
 
 .article-detail img {
