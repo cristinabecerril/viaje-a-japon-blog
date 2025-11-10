@@ -72,7 +72,7 @@ article {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  max-height: 30%}
+  max-height: 60%}
 
 article > img {
  max-width: 100%;
