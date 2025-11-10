@@ -45,6 +45,11 @@ nav {
   color: var(--color-primary);
 }
 
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
 
 /* Hero */
 .hero {
@@ -72,11 +77,6 @@ article {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  max-height: 60%}
-
-article > img {
- max-width: 100%;
- height: auto;
 }
 
 article:hover {
